@@ -32,6 +32,8 @@ app.get("/attendence", (_, res) => res.redirect("/attendance"));
 
 connectDB().then(() => {
   app.listen(port, () => {
-    console.log(` http://localhost:${port}/attendance`);
+    // console.log(` http://localhost:${port}/attendance`);
+    console.log(`Listenting on port ${port}`);
+
   });
 });
