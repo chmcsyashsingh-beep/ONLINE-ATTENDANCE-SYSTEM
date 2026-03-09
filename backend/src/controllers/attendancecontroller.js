@@ -3,9 +3,7 @@ import Attendance from "../models/attendancemodels.js";
 ///////// Get All
 export async function getAllAttendance(_, res) {
   try {
-    const attendance = await Attendance.find().sort({
-      createdAt: -1,
-    });
+    const attendance = await Attendance.find().sort({      createdAt: -1,    });
     res.status(200).json(attendance);
   } catch (error) {
     res.status(500).json({
