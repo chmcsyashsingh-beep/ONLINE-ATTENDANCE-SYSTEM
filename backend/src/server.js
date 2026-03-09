@@ -19,12 +19,12 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use("/attendance", attendanceRoutes);
+app.use("/", attendanceRoutes);
 
 
-app.get("/", (req, res) => {
-  res.status(200).json("Attendance Server Running");
-});
+// app.get("/", (req, res) => {
+//   res.status(200).json("Attendance Server Running");
+// });
 
 
 app.get("/attendence", (_, res) => res.redirect("/attendance"));
