@@ -6,7 +6,7 @@ import {
   createAttendance,
   updateAttendance,
   deleteAttendance
-} from "../controllers/attendanceController.js";
+} from "../controllers/attendancecontroller.js";
 
 const router = express.Router();
 
