@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import attendanceRoutes from "./routes/attendanceRoutes.js";
+import attendanceroutes from "./routes/attendanceroutes.js";
 import { connectDB } from "./config/db.js";
 import dns from "node:dns/promises";
 import cors from "cors";
@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use("/", attendanceRoutes);
+app.use("/attendance", attendanceroutes);
 
 
 // app.get("/", (req, res) => {
